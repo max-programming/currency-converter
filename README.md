@@ -40,20 +40,6 @@ netlify dev
 
 HTML, CSS, JavaScript, Vite, Netlify
   
-## API Reference
-
-#### Convert Currency
-
-```http
-POST /api/convertCurrency
-```
-
-#### Get Currency List
-
-```http
-GET /api/getCurrencyList
-```
-
 ## Feedback
 
 If you have any feedback, please reach out to us at the issues 😉
