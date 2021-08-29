@@ -1,5 +1,5 @@
 export async function convertCurrency(from, to, amount) {
-  const res = await fetch('/api/convert', {
+  const res = await fetch('/.netlify/functions/convert', {
     method: 'POST',
     body: JSON.stringify({ from, to, amount }),
     headers: {
@@ -12,7 +12,7 @@ export async function convertCurrency(from, to, amount) {
 }
 
 export async function getCurrencyList() {
-  const res = await fetch('/api/list');
+  const res = await fetch('/.netlify/functions/list');
   const { currencies } = await res.json();
 
   return currencies;
